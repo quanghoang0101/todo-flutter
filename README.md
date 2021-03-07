@@ -1,6 +1,7 @@
 # ToDo
 
-A Todo Flutter project.
+- Build Bloc and Clean architecture for a Todo Flutter project. 
+- Kiwi to inject dependencies 
 
 ## Demo
 ![](./demo/demo.gif)
