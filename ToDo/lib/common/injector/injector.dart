@@ -8,6 +8,7 @@ import 'package:ToDo/data/repositories/todo_repository_impl.dart';
 import 'package:ToDo/domain/repositories/todo_repository.dart';
 
 import '__mocks__/injector_mock.dart';
+
 part 'injector.g.dart';
 
 abstract class Injector {
