@@ -17,13 +17,14 @@ class _$Injector extends Injector {
   @override
   void _configureUsecases() {
     final KiwiContainer container = KiwiContainer();
-    container.registerFactory((c) => TodoUseCase(c<TodoRepositoryImpl>()));
+    container.registerFactory((c) => TodoUseCase(c<TodoRepository>()));
   }
 
   @override
   void _configureRepositories() {
     final KiwiContainer container = KiwiContainer();
-    container.registerFactory((c) => TodoRepositoryImpl(c<TodoDataSource>()));
+    container.registerFactory<TodoRepository>(
+        (c) => TodoRepositoryImpl(c<TodoDataSource>()));
   }
 
   @override
